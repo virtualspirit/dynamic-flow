@@ -12,7 +12,7 @@ module DynamicFlow
                   }
       end
 
-      serialize :configuration, Config
+      serialize :configuration, type: Config
 
     end
   end

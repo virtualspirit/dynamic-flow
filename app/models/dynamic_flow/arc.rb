@@ -10,7 +10,7 @@ module DynamicFlow
     scope :without_guards, -> { where(guards_count: 0) }
     scope :guards_count_desc, -> { order("guards_count DESC") }
 
-    enum direction: {
+    enum :direction, {
       in: 0,
       out: 1
     }

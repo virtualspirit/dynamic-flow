@@ -4,7 +4,7 @@ module DynamicFlow
     belongs_to :user, class_name: DynamicFlow.user_class
     belongs_to :task
 
-    serialize :payload, Hash
+    serialize :payload, type: Hash
 
     after_initialize do
       self.payload = {} if payload.blank?
