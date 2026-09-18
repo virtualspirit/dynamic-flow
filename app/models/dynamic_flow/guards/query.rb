@@ -2,7 +2,7 @@ module DynamicFlow
   module Guards
     class Query < DynamicFlow::Guard
 
-      serialize :query, Document::Concerns::VirtualModels::AdvancedSearch::Builder
+      serialize :query, type: Document::Concerns::VirtualModels::AdvancedSearch::Builder
 
       after_initialize do
         if respond_to? :query

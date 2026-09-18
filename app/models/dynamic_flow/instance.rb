@@ -182,7 +182,7 @@ module DynamicFlow
 
     end
 
-    serialize :configuration, Config
+    serialize :configuration, type: Config
     alias_attribute :config, :configuration
 
   end

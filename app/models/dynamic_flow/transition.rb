@@ -147,7 +147,7 @@ module DynamicFlow
 
     end
 
-    serialize :finish_condition, FinishCondition
+    serialize :finish_condition, type: FinishCondition
 
     def perform_callback callback_name:, payload: {}
       callback = config.callbacks.filter{|c| c.name == callback_name.to_s }.first

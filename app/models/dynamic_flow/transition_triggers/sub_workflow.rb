@@ -8,7 +8,7 @@ module DynamicFlow
         attribute :strict, :boolean, default: true
       end
 
-      serialize :configuration, Config
+      serialize :configuration, type: Config
 
     end
   end
